@@ -11,7 +11,16 @@
 
 h1{
     grid-row: 3 ;
-    grid-column: 6 / 11;
+    grid-column: 5 / 13;
+}
+
+.mark{
+    font-size: 15px;
+    grid-column: 2;
+    grid-row: 14;
+    z-index: 1;
+    font-style: italic;
+    color: red;
 }
 
 .objek{
@@ -47,14 +56,14 @@ h1{
 
 .teks2{
     text-align: justify;
-    font-size: 20px;
+    font-size: 18px;
     grid-row: 4;
     grid-column: 19 / 30;
 }
 
 .teks3{
     text-align: justify;
-    font-size: 20px;
+    font-size: 18px;
     grid-row: 10;
     grid-column: 19 / 30;
 }

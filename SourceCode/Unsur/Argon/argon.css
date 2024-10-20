@@ -9,13 +9,10 @@
     overflow: hidden; /* Menghilangkan scroll jika tidak diperlukan */
 }
 
-.objek{
-    width: 100vw;
-    height: 100vw;
-    display: grid;
-    grid-auto-columns: 50px;
-    grid-auto-rows: 50px;
- }
+h1{
+    grid-row: 3 ;
+    grid-column: 5 / 13;
+}
 
 .mark{
     font-size: 15px;
@@ -25,7 +22,15 @@
     font-style: italic;
     color: red;
 }
- 
+
+.objek{
+    width: 100vw;
+    height: 100vw;
+    display: grid;
+    grid-auto-columns: 50px;
+    grid-auto-rows: 50px;
+ }
+
  .gambar{
     width: 810px;
     height: 840px;
@@ -33,11 +38,42 @@
     grid-row: 1;
 }
 
-.gambar2{
+.Homebut{
+    grid-row: 2;
+    grid-column: 18;
+}
+
+.Mainbut{
+    grid-row: 2;
+    grid-column: 20;
+}
+
+.teks{
+    grid-row: 11;
+    grid-column: 18 / 32;
+    font-size: 25px;
+}
+
+.teks2{
+    text-align: justify;
+    font-size: 18px;
+    grid-row: 4;
+    grid-column: 19 / 30;
+}
+
+.teks3{
+    text-align: justify;
+    font-size: 18px;
+    grid-row: 10;
+    grid-column: 19 / 30;
+}
+
+.wiki{
+    font-size: 15px;
+    grid-column: 22 / 26;
+    grid-row: 9;
     z-index: 1;
-    width: 500px;
-    grid-row: 5;
-    grid-column: 4;
+    text-decoration: none;
 }
 
 .gambar3{
@@ -56,42 +92,9 @@
 }
 
 .gambar5{
-    width: 100px;
-    z-index: 1;
-    grid-column: 23;
-    grid-row: 8;
-}
-
-.Homebut{
-    grid-row: 2;
-    grid-column: 18;
-}
-
-.Mainbut{
-    grid-row: 2;
-    grid-column: 20;
-}
-
-.teks1{
-    grid-row: 5;
-    grid-column: 19;
-}
-
-.teks2{
-    font-size: 20px;
+    width: 200px;
     grid-row: 6;
-    grid-column: 19 /31;
-    text-align: justify;
-}
-
-.teks3{
-    grid-row: 11;
-    grid-column: 18 / 32;
-    font-size: 25px;
-}
-.teks4{
-    grid-row: 3;
-    grid-column: 5 / 14;
+    grid-column: 22;
 }
 
 .pict{
@@ -134,3 +137,4 @@
     grid-row: 12;
     grid-column: 29;
 }
+
