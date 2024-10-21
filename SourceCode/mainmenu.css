@@ -9,6 +9,15 @@
     overflow: hidden; /* Menghilangkan scroll jika tidak diperlukan */
 }
 
+@keyframes moveText {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(15px);
+    }
+  }
+
 .objek{
     width: 100vw;
     height: 100vw;
@@ -53,6 +62,8 @@
     z-index: 1;
     grid-column: 29;
     grid-row: 2;
+    animation: moveText 2s infinite alternate ease-in-out;
+
 }
 
 .gambar5{

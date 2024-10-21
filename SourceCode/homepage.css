@@ -10,21 +10,48 @@ html, body {
     overflow: hidden; /* Menghilangkan scroll jika tidak diperlukan */
 }
 
+@keyframes moveText {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(15px);
+    }
+  }
+
 .objek{
     width: 100vw;
     height: 100vw;
     display: grid;
-    grid-auto-columns: 100px;
-    grid-auto-rows: 100px;
+    grid-auto-columns: 50px;
+    grid-auto-rows: 50px;
+ }
+
+ .objek2{
+    width: 100vw;
+    height: 100vw;
+    display: grid;
+    grid-auto-columns: 10px;
+    grid-auto-rows: 10px;
  }
 
 .teks1{
-    font-size: 50px;
-    grid-row: 3;
-    grid-column: 9/15;
+    font-size: 45px;
+    grid-row: 6;
+    grid-column: 18/32;
+    color: whitesmoke;
+    animation: moveText 2s infinite alternate ease-in-out;
+    font-family:'Franklin Gothic Medium';
+}
+
+.teks2{
+    font-size: 20px;
+    grid-row: 68;
+    grid-column: 140;
     color: white;
 
 }
+
 .gambar{
     width: 100vw;
     height: 840px;
@@ -32,10 +59,33 @@ html, body {
 }
  
 .move1{
-    color: white;
-    font-size: 30px;
+    font-size: 25px;
     text-decoration: none;
+    color: white;
+    background-color: black;
+    z-index: 1;
 
-    grid-row: 4;
-    grid-column: 10/15 ;
+    grid-row: 7 / 9;
+    grid-column: 19/25;
+    border: none;
+    padding: 10px 10px;
+    margin: 25px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.move1:hover{
+    background-color: darkred;
+    transform: scale(1.05);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.5);
+}
+
+.ig{
+    grid-column: 137;
+    grid-row: 68;
+
+}
+
+.pict{
+    width: 25px;
 }

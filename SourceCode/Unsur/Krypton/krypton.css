@@ -14,6 +14,15 @@ h1{
     grid-column: 3 / 15;
 }
 
+@keyframes moveText {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(15px);
+    }
+  }
+
 .mark{
     font-size: 15px;
     grid-column: 2;
@@ -89,6 +98,7 @@ h1{
     z-index: 1;
     grid-column: 29;
     grid-row: 2;
+    animation: moveText 2s infinite alternate ease-in-out;
 }
 
 .gambar5{

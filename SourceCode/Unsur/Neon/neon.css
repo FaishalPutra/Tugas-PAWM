@@ -14,6 +14,15 @@ h1{
     grid-column: 6 / 13;
 }
 
+@keyframes moveText {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(15px);
+    }
+  }
+
 .mark{
     font-size: 15px;
     grid-column: 2;
@@ -89,6 +98,7 @@ h1{
     z-index: 1;
     grid-column: 29;
     grid-row: 2;
+    animation: moveText 2s infinite alternate ease-in-out;
 }
 
 .gambar5{
@@ -136,5 +146,44 @@ h1{
 .Rnbut{
     grid-row: 12;
     grid-column: 29;
+}
+
+.container {
+    padding: 20px;
+    grid-column: 5/20;
+    grid-row: 4;
+}
+
+.lamp-container {
+    margin: 20px auto;
+    width: 150px;
+    height: 300px;
+    background-color: #222;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.neon-lamp {
+    width: 50px;
+    height: 150px;
+    background-color: black;
+    border-radius: 25px;
+    transition: background-color 0.5s ease;
+}
+
+.voltage-control {
+    margin-top: 20px;
+}
+
+input[type=range] {
+    width: 300px;
+}
+
+#voltage-output {
+    font-weight: bold;
+    margin-left: 10px;
 }
 
