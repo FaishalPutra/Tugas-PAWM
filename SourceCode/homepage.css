@@ -7,7 +7,7 @@
 html, body {
     width: 100%;
     height: 100%;
-    overflow: hidden; /* Menghilangkan scroll jika tidak diperlukan */
+    overflow-x: hidden; /* Menghilangkan scroll jika tidak diperlukan */
 }
 
 @keyframes moveText {
@@ -18,6 +18,8 @@ html, body {
       transform: translateX(15px);
     }
   }
+
+
 
 .objek{
     width: 100vw;
@@ -37,7 +39,7 @@ html, body {
 
 .teks1{
     font-size: 45px;
-    grid-row: 6;
+    grid-row: 4;
     grid-column: 18/32;
     color: whitesmoke;
     animation: moveText 2s infinite alternate ease-in-out;
@@ -52,13 +54,27 @@ html, body {
 
 }
 
+.pengertian{
+  grid-row: 6;
+  grid-column: 14 / 30;
+  font-size: 35px;
+  text-align: justify;
+  color: whitesmoke;
+}
+
 .gambar{
     width: 100vw;
-    height: 840px;
+    height: 100vw;
 
 }
+
+.gambar2{
+  width: 500px;
+  grid-row: 4;
+  grid-column: 2;
+}
  
-.move1{
+/* .move1{
     font-size: 25px;
     text-decoration: none;
     color: white;
@@ -78,7 +94,7 @@ html, body {
     background-color: darkred;
     transform: scale(1.05);
     box-shadow: 0 6px 10px rgba(0, 0, 0, 0.5);
-}
+} */
 
 .ig{
     grid-column: 137;
@@ -88,4 +104,97 @@ html, body {
 
 .pict{
     width: 25px;
+}
+
+.logo{
+  width: 50px;
+  z-index: 1;
+  grid-row: 2;
+  grid-column: 1;
+}
+
+.galia{
+  font-size: 25px;
+  grid-row: 4;
+  grid-column: 6;
+}
+
+.homepage{
+  font-size: 20px;
+  grid-column: 104;
+  grid-row: 4;
+  color: black;
+}
+
+#menu1 {
+  font-size: 20px;
+  grid-row: 3;
+  grid-column: 117;
+  padding: 10px;
+  cursor: pointer;
+  background-color: transparent;
+  border: none;
+  text-decoration: underline;
+}
+
+.about {
+  font-size: 20px;
+  grid-row: 4;
+  grid-column: 128;
+  text-decoration: underline;
+}
+
+.signin {
+  font-size: 20px;
+  grid-row: 1/10;
+  grid-column: 134/ 148;
+  text-decoration: none;
+  color: white;
+  background-color: black;
+  z-index: 1;
+
+  border: none;
+  padding: 10px 10px;
+  margin: 25px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.signin:hover{
+  background-color: red;
+  transform: scale(1.05);
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.5);
+}
+
+
+.menu {
+  display: none; /* Menu disembunyikan secara default */
+  background-color: black;
+  color: white;
+  padding: 15px;
+  position: absolute; 
+  top: 60px; 
+  left: 80%; 
+  transform: translateX(-50%);
+  z-index: 10; 
+  width: 200px; 
+}
+
+.menu ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.menu ul li {
+  grid-row: 4;
+  padding: 10px 0;
+}
+
+.menu ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+.menu.show {
+  display: block;
 }

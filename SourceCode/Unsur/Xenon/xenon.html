@@ -8,12 +8,13 @@
 <body>
     <div class="objek">
 
-        <img class="gambar" src="../../Image/Background/blue.png">
-        <img class="gambar3" src="../../Image/Background/black.png">
+        <button onclick="window.location.href='../../homepage.html'" class="back">Back to Homepage</button>
+
+        <img class="gambar" src="../../Image/Background/red.png">
         <img class="gambar4" src="../../Image/Additional/atom.png">
         <img class="gambar5" src="../../Image/Gambar unsur/FotoXe.png">
 
-        <h1>Ilustrasi Xenon pada Proyektor</h1>
+        <h1 class="ilus">Ilustrasi Xenon pada Proyektor</h1>
 
         <p1 class="teks"> Untuk informasi setiap unsur, pilih dari yang tersedia dibawah ini</p1>
         <p class="teks2"> <strong>Xenon</strong> memiliki nomor atom 54, padat, tidak berwarna, dan tidak berbau yang ditemukan di atmosfer Bumi dalam jumlah kecil, dan merupakan senyawa gas mulia pertama yang berhasil disintesis.</p>
@@ -21,15 +22,7 @@
         <p class="teks3"> Xenon biasanya digunakan sebagai <strong>lampu busur pada Proyektor.</strong></p>
         <p1 class="mark"><strong>XENON</strong></p1>
 
-        <a href="../../homepage.html" class="Homebut">
-            <img src="../../Image/Button/Homebut.png" class="pict2">
-        </a>
 
-        <a href="../../mainmenu.html" class="Mainbut">
-            <img src="../../Image/Button/Mainbut.png" class="pict2">
-        </a>
-
-//unsur
         <a href="../Helium/helium.html" class="Hebut">
             <img src="../../Image/Unsur/He.png" class="pict">
         </a>
@@ -54,6 +47,27 @@
             <img src="../../Image/Unsur/Rn.png" class="pict">
         </a>
 
+        <div class="container">
+            <h1>Simulasi Lampu Busur Xenon untuk Proyektor</h1>
+            <p>Atur parameter lampu untuk menghasilkan cahaya optimal:</p>
+    
+            <div class="controls">
+                <label for="current">Arus Listrik (A):</label>
+                <input type="range" id="current" min="10" max="100" value="50">
+    
+                <label for="pressure">Tekanan Gas Xenon (atm):</label>
+                <input type="range" id="pressure" min="1" max="10" value="5">
+            </div>
+    
+            <div class="visualization">
+                <canvas id="xenon-lamp" width="600" height="300"></canvas>
+                <p id="output-message">Cahaya yang dihasilkan: - lumen</p>
+            </div>
+        </div>
+
     </div>
+
+    <script src="xenon.js"></script>
+
 </body>
 </html>

@@ -8,7 +8,7 @@ function stopShake() {
   text.classList.remove('shaking');
 }
 
-document.getElementById("menu1").addEventListener("click", function() {
+document.getElementById("menuButton").addEventListener("click", function() {
   var menu = document.getElementById("menu");
   menu.classList.toggle("show");
 });
