@@ -20,12 +20,11 @@ function wavelengthToColor(wavelength) {
 function drawLaserBeam() {
     const [r, g, b] = wavelengthToColor(wavelength);
 
-    // Bersihkan canvas
     ctx.clearRect(0, 0, canvas.width, canvas.height);
 
     // Tentukan posisi dan ukuran laser
-    const laserWidth = 10;  // Lebar sinar laser
-    const laserHeight = canvas.height * 0.6;  // Panjang sinar laser (60% dari tinggi canvas)
+    const laserWidth = 10;  
+    const laserHeight = canvas.height * 0.6; 
     const laserX = (canvas.width / 2) - (laserWidth / 2);  // Pusatkan sinar laser di tengah canvas
     const laserY = (canvas.height / 2) - (laserHeight / 2);  // Posisi vertikal sinar laser
 

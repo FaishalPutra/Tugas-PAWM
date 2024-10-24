@@ -39,8 +39,8 @@ html, body {
 
 .teks1{
     font-size: 45px;
-    grid-row: 4;
-    grid-column: 18/32;
+    grid-row: 16;
+    grid-column: 13/32;
     color: whitesmoke;
     animation: moveText 2s infinite alternate ease-in-out;
     font-family:'Franklin Gothic Medium';
@@ -48,17 +48,17 @@ html, body {
 
 .teks2{
     font-size: 20px;
-    grid-row: 68;
-    grid-column: 140;
+    grid-row: 145;
+    grid-column: 74;
     color: white;
 
 }
 
 .pengertian{
-  grid-row: 6;
-  grid-column: 14 / 30;
+  grid-row: 19;
+  grid-column: 6 / 26;
   font-size: 35px;
-  text-align: justify;
+  text-align: center;
   color: whitesmoke;
 }
 
@@ -68,12 +68,46 @@ html, body {
 
 }
 
-.gambar2{
-  width: 500px;
-  grid-row: 4;
-  grid-column: 2;
+.gambar5{
+  width: 86vw;
+  height: 25vw;
+  grid-column: 3 / 20;
+  grid-row: 4 ;
+  border-radius: 40px;
 }
- 
+
+.gambar2{
+  width: 450px;
+  grid-row: 5;
+  grid-column: 20;
+  transition: transform 0.1s ease;
+  z-index: 10;
+}
+.gambar2:hover{
+  transform: scale(1.1);
+}
+
+.gambar3{
+  width: 450px;
+  grid-row: 5;
+  grid-column: 3;
+  transition: transform 0.1s ease;
+  z-index: 10;
+}
+.gambar3:hover{
+  transform: scale(1.1);
+}
+
+.gambar4{
+  width: 400px;
+  grid-row: 5;
+  grid-column: 12;
+  transition: transform 0.1s ease;
+  z-index: 10;
+}
+.gambar4:hover{
+  transform: scale(1.1);
+}
 /* .move1{
     font-size: 25px;
     text-decoration: none;
@@ -97,8 +131,8 @@ html, body {
 } */
 
 .ig{
-    grid-column: 137;
-    grid-row: 68;
+    grid-column: 71;
+    grid-row: 145;
 
 }
 
@@ -124,6 +158,10 @@ html, body {
   grid-column: 104;
   grid-row: 4;
   color: black;
+  transition: transform 0.1s ease;
+}
+.homepage:hover{
+  transform: scale(1.1);
 }
 
 #menu1 {
@@ -135,6 +173,10 @@ html, body {
   background-color: transparent;
   border: none;
   text-decoration: underline;
+  transition: transform 0.1s ease;
+}
+#menu1:hover{
+  transform: scale(1.1);
 }
 
 .about {
@@ -142,6 +184,11 @@ html, body {
   grid-row: 4;
   grid-column: 128;
   text-decoration: underline;
+  transition: transform 0.1s ease;
+  cursor: pointer;
+}
+.about:hover{
+  transform: scale(1.1);
 }
 
 .signin {
@@ -178,6 +225,7 @@ html, body {
   transform: translateX(-50%);
   z-index: 10; 
   width: 200px; 
+  
 }
 
 .menu ul {
