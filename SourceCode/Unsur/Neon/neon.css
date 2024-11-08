@@ -23,6 +23,54 @@
     }
   }
 
+  .objek{
+    width: 100vw;
+    height: 100vw;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+ }
+
+
+ .left{
+    background-image: url(../../Image/Background/red.png);
+    background-repeat: no-repeat; 
+    background-size: cover;
+    margin: 0;
+ }
+
+ .topr{
+    display: flex;
+    justify-content: space-between;
+ }
+
+ .atom{
+    width: 100px;
+    margin-right: 1vw;
+    z-index: 1;
+    justify-content: end;
+    animation: moveText 2s infinite alternate ease-in-out;
+}
+
+.back {
+    font-size: 20px;
+    text-decoration: none;
+    color: white;
+    background-color: black;
+    z-index: 1;
+  
+    border: none;
+    padding: 10px 10px;
+    margin: 25px;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  .back:hover{
+    background-color: darkred;
+    transform: scale(1.05);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.5);
+  }
+
 .mark{
     font-size: 15px;
     grid-column: 2;
@@ -32,69 +80,55 @@
     color: red;
 }
 
-.objek{
-    width: 100vw;
-    height: 100vw;
-    display: grid;
-    grid-auto-columns: 50px;
-    grid-auto-rows: 50px;
- }
+.mid1r{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 
- .gambar{
-    width: 50vw;
-    height: 70vw;
-    grid-column: 1;
-    grid-row: 1;
 }
 
-.teks{
-    grid-row: 11;
-    grid-column: 18 / 32;
-    font-size: 25px;
-}
-
-.teks2{
-    text-align: justify;
+.pengertian{
     font-size: 18px;
-    grid-row: 4;
-    grid-column: 19 / 30;
+    margin-top: 2vw;
+    margin-left: 7vw;
+    margin-right: 7vw;
+    text-align: justify;
 }
 
-.teks3{
-    text-align: justify;
-    font-size: 18px;
-    grid-row: 10;
-    grid-column: 19 / 30;
+
+.light{
+    width: 200px;
+    margin-top: 3vw;
 }
+
 
 .wiki{
     font-size: 15px;
-    grid-column: 22 / 26;
-    grid-row: 9;
+    margin-top: 1vw;
     z-index: 1;
     text-decoration: none;
 }
 
-.gambar3{
-    z-index: 1;
-    width: 1920px;
-    height: 30px;
-    grid-row: 1;
-    grid-column: 1/-1;
+.contoh{
+    text-align: justify;
+    font-size: 18px;
+    margin-top: 2vw;
 }
 
-.gambar4{
-    width: 100px;
-    z-index: 1;
-    grid-column: 29;
-    grid-row: 1;
-    animation: moveText 2s infinite alternate ease-in-out;
+.mid2r{
+    display: flex;
+    justify-content: center;
 }
 
-.gambar5{
-    width: 200px;
-    grid-row: 6;
-    grid-column: 22;
+.pilih{
+    margin-top: 2vw;
+    font-size: 25px;
+}
+
+.botr{
+    margin-top: 1vw;
+    display: flex;
+    justify-content: center;
 }
 
 .pict{
@@ -102,40 +136,24 @@
     height: 100px;
 }
 
-.pict2{
-    width: 80px;
-    height: 40px;
-    z-index: 1;
+.topl{
+    display: flex;
+    justify-content: center;
+    margin-top: 3vw;
 }
 
-.Hebut{
-    grid-row: 12;
-    grid-column: 19;
+.midl{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3vw;
 }
 
-.Nebut{
-    grid-row: 12;
-    grid-column: 21;
-}
-
-.Arbut{
-    grid-row: 12;
-    grid-column: 23;
-}
-
-.Krbut{
-    grid-row: 12;
-    grid-column: 25;
-}
-
-.Xebut{
-    grid-row: 12;
-    grid-column: 27;
-}
-
-.Rnbut{
-    grid-row: 12;
-    grid-column: 29;
+.botl{
+    display: flex;
+    margin-top: 8vw;
+    margin-left: 2vw;
 }
 
 .container {

@@ -8,62 +8,83 @@
 <body>
     <div class="objek">
 
-        <button onclick="window.location.href='../../../index.html'" class="back">Back to Homepage</button>
-
-        <img class="gambar" src="../../Image/Background/red.png">
-        <img class="gambar4" src="../../Image/Additional/atom.png">
-        <img class="gambar5" src="../../Image/Gambar unsur/FotoKr.png">
-
-        <h1 class="ilus">Ilustrasi Krypton pada Laser Kamera</h1>
-
-        <p1 class="teks"> Untuk informasi setiap unsur, pilih dari yang tersedia dibawah ini</p1>
-        <p class="teks2"> <strong>Krypton</strong> memiliki nomor atom 36, tidak berwarna, tidak berbau, memiliki banyak garis spektrum dan plasma kripton, dan tidak berasa yang terjadi dalam jumlah kecil di atmosfer.</p>
-        <a href="https://id.wikipedia.org/wiki/Kripton" class="wiki"><strong>Sumber gambar: wikipedia</strong> </a>
-        <p class="teks3"> Krypton biasanya digunakan dalam<strong> Pencahayaan dan Fotografi.</strong></p>
-        <p1 class="mark"><strong>KRYPTON</strong></p1>
-
-        <a href="../Helium/helium.html" class="Hebut">
-            <img src="../../Image/Unsur/He.png" class="pict">
-        </a>
-
-        <a href="../Neon/neon.html" class="Nebut">
-            <img src="../../Image/Unsur/Ne.png" class="pict">
-        </a>
-
-        <a href="../Argon/argon.html" class="Arbut">
-            <img src="../../Image/Unsur/Ar.png" class="pict">
-        </a>
-
-        <p class="Krbut">
-            <img src="../../Image/Unsur/Kr.png" class="pict">
-        </p>
-
-        <a href="../Xenon/xenon.html" class="Xebut">
-            <img src="../../Image/Unsur/Xe.png" class="pict">
-        </a>
-
-        <a href="../Radon/radon.html" class="Rnbut">
-            <img src="../../Image/Unsur/Rn.png" class="pict">
-        </a>
-
-        <div class="container">
-            <p class="atur">Atur panjang gelombang dan intensitas laser untuk menghasilkan gambar terbaik:</p>
-    
-            <div class="controls">
-                <label for="wavelength">Panjang Gelombang (nm):</label>
-                <input type="range" id="wavelength" min="400" max="700" value="550">
-    
-                <label for="intensity">Intensitas Laser:</label>
-                <input type="range" id="intensity" min="1" max="10" value="5">
+        <div class="left">
+            <div class="topl">
+                <h1>Ilustrasi Krypton pada Laser Kamera</h1>
             </div>
-    
-            <div class="visualization">
-                <canvas id="laser-camera" width="600" height="300"></canvas>
-                <p id="output-message">Kualitas Gambar: -</p>
+
+            <div class="midl">
+                <div class="container">
+                    <p class="atur">Atur panjang gelombang dan intensitas laser untuk menghasilkan gambar terbaik:</p>
+            
+                    <div class="controls">
+                        <label for="wavelength">Panjang Gelombang (nm):</label>
+                        <input type="range" id="wavelength" min="400" max="700" value="550">
+            
+                        <label for="intensity">Intensitas Laser:</label>
+                        <input type="range" id="intensity" min="1" max="10" value="5">
+                    </div>
+            
+                    <div class="visualization">
+                        <canvas id="laser-camera" width="600" height="300"></canvas>
+                        <p id="output-message">Kualitas Gambar: -</p>
+                    </div>
+                </div>
             </div>
+
+            <div class="botl">
+                <p1 class="mark"><strong>KRYPTON</strong></p1>
+            </div>
+
+
         </div>
 
-        
+        <div class="right">
+            <div class="topr">
+                <button onclick="window.location.href='../../../index.html'" class="back">Back to Homepage</button>
+                <img class="atom" src="../../Image/Additional/atom.png">
+            </div>
+
+            <div class="mid1r">
+                <p class="pengertian"> <strong>Krypton</strong> memiliki nomor atom 36, tidak berwarna, tidak berbau, memiliki banyak garis spektrum dan plasma kripton, dan tidak berasa yang terjadi dalam jumlah kecil di atmosfer.</p>
+                <img class="light" src="../../Image/Gambar unsur/FotoHe.png">
+                <h2></h2>
+                <a href="https://id.wikipedia.org/wiki/Kripton" class="wiki"><strong>Sumber gambar: wikipedia</strong> </a>
+                <p class="contoh"> Krypton biasanya digunakan dalam<strong> Pencahayaan dan Fotografi.</strong> </p>
+
+            </div>
+
+            <div class="mid2r">
+                <p1 class="pilih"> Untuk informasi setiap unsur, pilih dari yang tersedia dibawah ini</p1>
+            </div>
+
+            <div class="botr">
+                <a href="../Helium/helium.html">
+                    <img src="../../Image/Unsur/He.png" class="pict">
+                </a>
+    
+                <a href="../Neon/neon.html">
+                    <img src="../../Image/Unsur/Ne.png" class="pict">
+                </a>
+    
+                <a href="../Argon/argon.html">
+                    <img src="../../Image/Unsur/Ar.png" class="pict">
+                </a>
+    
+                <p>
+                    <img src="../../Image/Unsur/Kr.png" class="pict">
+                </p>
+    
+                <a href="../Xenon/xenon.html">
+                    <img src="../../Image/Unsur/Xe.png" class="pict">
+                </a>
+    
+                <a href="../Radon/radon.html">
+                    <img src="../../Image/Unsur/Rn.png" class="pict">
+                </a>
+            </div>
+
+        </div>
 
     </div>
 

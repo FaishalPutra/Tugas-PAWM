@@ -9,11 +9,6 @@
     overflow: hidden; /* Menghilangkan scroll jika tidak diperlukan */
 }
 
-.ilus{
-    grid-row: 2 ;
-    grid-column: 5 / 14;
-}
-
 @keyframes moveText {
     0% {
       transform: translateX(0);
@@ -23,125 +18,36 @@
     }
   }
 
-.mark{
-    font-size: 15px;
-    grid-column: 2;
-    grid-row: 14;
-    z-index: 1;
-    font-style: italic;
-    color: red;
-}
-
 .objek{
     width: 100vw;
     height: 100vw;
     display: grid;
-    grid-auto-columns: 50px;
-    grid-auto-rows: 50px;
+    grid-template-columns: 1fr 1fr;
  }
 
- .gambar{
-    width: 50vw;
-    height: 70vw;
-    grid-column: 1;
-    grid-row: 1;
-}
 
-.teks{
-    grid-row: 11;
-    grid-column: 18 / 32;
-    font-size: 25px;
-}
+ .left{
+    background-image: url(../../Image/Background/red.png);
+    background-repeat: no-repeat; 
+    background-size: cover;
+    margin: 0;
+ }
 
-.teks2{
-    text-align: justify;
-    font-size: 18px;
-    grid-row: 4;
-    grid-column: 19 / 30;
-}
+ .topr{
+    display: flex;
+    justify-content: space-between;
+ }
 
-.teks3{
-    text-align: justify;
-    font-size: 18px;
-    grid-row: 9;
-    grid-column: 19 / 30;
-}
-
-.wiki{
-    font-size: 15px;
-    grid-column: 22 / 26;
-    grid-row: 9;
-    z-index: 1;
-    text-decoration: none;
-}
-
-.gambar3{
-    z-index: 1;
-    width: 1920px;
-    height: 30px;
-    grid-row: 1;
-    grid-column: 1/-1;
-}
-
-.gambar4{
+ .atom{
     width: 100px;
+    margin-right: 1vw;
     z-index: 1;
-    grid-column: 29;
-    grid-row: 1;
+    justify-content: end;
     animation: moveText 2s infinite alternate ease-in-out;
-}
-
-.gambar5{
-    width: 200px;
-    grid-row: 6;
-    grid-column: 22;
-}
-
-.pict{
-    width: 100px;
-    height: 100px;
-}
-
-.pict2{
-    width: 80px;
-    height: 40px;
-    z-index: 1;
-}
-
-.Hebut{
-    grid-row: 12;
-    grid-column: 19;
-}
-
-.Nebut{
-    grid-row: 12;
-    grid-column: 21;
-}
-
-.Arbut{
-    grid-row: 12;
-    grid-column: 23;
-}
-
-.Krbut{
-    grid-row: 12;
-    grid-column: 25;
-}
-
-.Xebut{
-    grid-row: 12;
-    grid-column: 27;
-}
-
-.Rnbut{
-    grid-row: 12;
-    grid-column: 29;
 }
 
 .back {
     font-size: 20px;
-    grid-row: 1/3;
-    grid-column: 17/ 22;
     text-decoration: none;
     color: white;
     background-color: black;
@@ -159,6 +65,85 @@
     transform: scale(1.05);
     box-shadow: 0 6px 10px rgba(0, 0, 0, 0.5);
   }
+
+.mark{
+    font-size: 15px;
+    grid-column: 2;
+    grid-row: 14;
+    z-index: 1;
+    font-style: italic;
+    color: red;
+}
+
+.mid1r{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.pengertian{
+    font-size: 18px;
+    margin-top: 2vw;
+    margin-left: 7vw;
+    margin-right: 7vw;
+    text-align: justify;
+}
+
+
+.light{
+    width: 202px;
+    margin-top: 3vw;
+}
+
+.contoh{
+    text-align: justify;
+    font-size: 18px;
+    margin-top: 3vw;
+    margin-left: 7vw;
+    margin-right: 7vw;
+}
+
+.mid2r{
+    display: flex;
+    justify-content: center;
+}
+
+.pilih{
+    margin-top: 2vw;
+    font-size: 25px;
+}
+
+.botr{
+    margin-top: 1vw;
+    display: flex;
+    justify-content: center;
+}
+
+.pict{
+    width: 100px;
+    height: 100px;
+}
+
+.topl{
+    display: flex;
+    justify-content: center;
+    margin-top: 3vw;
+}
+
+.midl{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5vw;
+}
+
+.botl{
+    display: flex;
+    margin-top: 15vw;
+    margin-left: 2vw;
+}
 
   .container {
     max-width: 600px;
