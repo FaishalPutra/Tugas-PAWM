@@ -132,6 +132,7 @@ margin-left: 3%;
 text-decoration: underline;
 transition: transform 0.1s ease;
 cursor: pointer;
+color: black;
 
 }
 .about:hover{
