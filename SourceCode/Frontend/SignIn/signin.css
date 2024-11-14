@@ -1,0 +1,112 @@
+html, body {
+    margin: 0;
+    padding: 0;
+  }
+
+
+  body {
+    background-image: url(../Image/Background/red.png);
+    background-repeat: no-repeat; 
+    background-size: cover;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    background-color: #f7f9fc;
+  }
+  
+  .container {
+    position: relative;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    text-align: center;
+  }
+  
+  .kotak {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .hidden {
+    display: none;
+  }
+  
+  input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+  }
+  
+  .signin_but, .signup_but {
+    padding: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+  }
+
+  .close {
+    text-decoration: none;
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #333;
+    cursor: pointer;
+    z-index: 10;
+    border: none;
+    background: none;
+
+}
+
+.close:hover {
+    transition: color 0.3s ease;
+}
+
+.back {
+    text-decoration: none;
+    position: absolute;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #333;
+    cursor: pointer;
+    z-index: 10;
+    border: none;
+    background: none;
+
+}
+
+.back:hover {
+    transition: color 0.3s ease;
+}
+
+.arrow_but{
+    width: 25px;
+  }
+    
+
+.hidden {
+    display: none;
+  }
+  
+  
+  p {
+    font-size: 0.9rem;
+  }
+  
+  span {
+    color: #007bff;
+    cursor: pointer;
+    text-decoration: underline;
+  }
+  

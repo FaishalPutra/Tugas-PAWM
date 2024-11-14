@@ -1,0 +1,144 @@
+/* General body styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-image: url(../Image/Background/red.png);
+    background-repeat: no-repeat; 
+    background-size: cover;
+  }
+  
+  /* Container untuk profil */
+  .profile-container {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 400px;
+    text-align: center;
+    position: relative;
+  }
+  
+  /* Judul halaman profil */
+  h1 {
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  /* Styling untuk bagian foto profil */
+  .photo-container {
+    margin-bottom: 20px;
+  }
+  
+  .photo-container img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid #ddd;
+  }
+  
+  .photo-container button {
+    margin-top: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .photo-container button:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Styling untuk setiap informasi (username, email, dll.) */
+  .info {
+    margin: 15px 0;
+  }
+  
+  .info label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #555;
+  }
+  
+  .info-box {
+    background-color: #f7f7f7;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    color: #333;
+  }
+  
+  /* Styling untuk kotak password */
+  .password-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .password-box input {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 10px;
+    flex: 1;
+    margin-right: 10px;
+  }
+  
+  .password-box button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .password-box button:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Styling untuk tombol logout */
+  button#logout_button {
+    margin-top: 20px;
+    background-color: black;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  button#logout_button:hover {
+    background-color: darkred;
+  }
+  
+  .back {
+    top: 1vw;
+    left: 1vw; 
+    text-decoration: none;
+    position: absolute;
+    font-size: 1.4rem;
+    font-weight: bold;
+    color: #333;
+    cursor: pointer;
+    z-index: 10;
+    border: none;
+    background: none;
+
+}
+
+.back:hover {
+    transition: color 0.3s ease;
+}
+
+.arrow_but{
+  width: 30px;
+}

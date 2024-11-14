@@ -2,25 +2,34 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="SourceCode/homepage.css">
+    <link rel="stylesheet" href="SourceCode/Frontend/homepage.css">
     <title>GasMuliaa</title>
 </head>
 <body>
-
-        <div class="top">
-            <img src="SourceCode/Image/Additional/logo.png" class="logo">
+        <div class="top" id="top_signed_out">
+            <img src="SourceCode/Frontend/Image/Additional/logo.png" class="logo">
             <p class="galia">GALIA</p>    
             <a class="homepage" href="index.html"><strong>Homepage</strong></a>
             <button id="menu1"><strong>Menu</strong></button> 
-            <a class="about" href="SourceCode/About/about.html"><strong>About</strong></a>
-            <button class="signin">Sign in</button>
+            <a class="about" href="SourceCode/Frontend/About/about.html"><strong>About</strong></a>
+            <button onclick="window.location.href='SourceCode/Frontend/Signin/signin.html'" class="signin">Sign in</button>
 
         </div>
 
+        <div class="top hidden" id="top_signed_in">
+          <img src="SourceCode/Frontend/Image/Additional/logo.png" class="logo">
+          <p class="galia">GALIA</p>
+          <a class="homepage" href="index.html"><strong>Homepage</strong></a>
+          <button id="menu2"><strong>Menu</strong></button>
+          <a class="about" href="SourceCode/Frontend/About/about.html"><strong>About</strong></a>
+          <button onclick="window.location.href='SourceCode/Frontend/Profil/profil.html'" class="signin">Profile</button>
+        </div>
+      
+
         <div class="mid">
-          <img class="tangan" src="SourceCode/Image/Additional/tangan.png">
-          <img class="atomas" src="SourceCode/Image/Additional/atomas.png">
-          <img class="tabung" src="SourceCode/Image/Additional/tabung.png">
+          <img class="tangan" src="SourceCode/Frontend/Image/Additional/tangan.png">
+          <img class="atomas" src="SourceCode/Frontend/Image/Additional/atomas.png">
+          <img class="tabung" src="SourceCode/Frontend/Image/Additional/tabung.png">
         </div>
 
         <div class="mid2">
@@ -31,7 +40,7 @@
 
         <div class="bot"> 
             <a href="https://www.instagram.com/faishaltr_/?hl=en" class="ig">
-                <img src="SourceCode/Image/Additional/ig.png" class="pict">
+                <img src="SourceCode/Frontend/Image/Additional/ig.png" class="pict">
             </a>   
             <p class="teks2">contact</p>            
         </div>
@@ -39,23 +48,16 @@
 
         <div id="menu" class="menu">
           <ul>
-              <li><a href="SourceCode/Tabel/tabel.html">Tabel priodik</a></li>
-              <li><a href="SourceCode/Unsur/Helium/helium.html">Info Unsur</a></li>
-              <li><a href="SourceCode/Reaksi/reaksi.html">Uji reaksi</a></li>
+              <li><a href="SourceCode/Frontend/Tabel/tabel.html">Tabel priodik</a></li>
+              <li><a href="SourceCode/Frontend/Unsur/Helium/helium.html">Info Unsur</a></li>
+              <li><a href="SourceCode/Frontend/Reaksi/reaksi.html">Uji reaksi</a></li>
           </ul>
         <div>
 
-
-  <!-- <div id="menu" class="menu">
-    <ul>
-      <li><a href="#">Home</a></li>
-      <li><a href="#">About</a></li>
-      <li><a href="#">Services</a></li>
-      <li><a href="#">Contact</a></li>
-    </ul>
-  </div> -->
+    <script src="SourceCode/Frontend/homepage.js"></script>
+    <script type="module" src="SourceCode/Backend/firebase.js"></script>
+    
 
 
-    <script src="SourceCode/homepage.js"></script>
 </body>
 </html>

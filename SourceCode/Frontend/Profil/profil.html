@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="profil.css">
+  <title>Profil Pengguna</title>
+</head>
+<body>
+  
+  <div class="profile-container">
+    <button onclick="window.location.href='../../../index.html'" class="back" id="back">
+      <img class="arrow_but" src="../Image/Additional/arrowback.png">
+    </button>
+
+    <h1>Profil Pengguna</h1>
+
+    <!-- Foto Profil -->
+    <div class="photo-container">
+      <img src="../Image/Additional/profile.png" alt="Foto Profil" id="profile_photo">
+    </div>
+
+    <!-- Username -->
+    <div class="info">
+      <label for="username">Username:</label>
+      <div class="info-box" id="username_box">Memuat...</div>
+    </div>
+
+    <!-- Email -->
+    <div class="info">
+      <label for="email">Email:</label>
+      <div class="info-box" id="email_box">Memuat...</div>
+    </div>
+
+    <!-- Skor -->
+    <div class="info">
+      <label for="score">Skor Terbaru:</label>
+      <div class="info-box" id="score_box">Memuat...</div>
+    </div>
+
+    <!-- Tombol Logout -->
+    <button id="logout_button">Logout</button>
+  </div>
+
+  <script type="module" src="profil.js"></script>
+  <script type="module" src="../../Backend/firebase.js"></script>
+
+</body>
+</html>

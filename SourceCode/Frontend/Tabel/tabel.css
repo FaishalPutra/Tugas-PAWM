@@ -1,0 +1,96 @@
+
+html, body {
+  margin: 0;
+  padding: 0;
+  
+}
+
+  body{
+  height: 100vw;
+  background-image: url(../Image/Background/red.png);
+  background-repeat: no-repeat; 
+  background-size: cover;
+  margin: 0;
+  overflow: hidden;
+  }
+  
+  .objek{
+  height: 100vw;
+  
+  
+  }
+  
+  @keyframes moveText {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(15px);
+    }
+  }
+  
+  .top{
+  display: flex;
+  height: 5%;
+  flex-direction: row;
+  
+  
+  }
+  
+  .back {
+    font-size: 1.5vw;
+    text-decoration: none;
+    color: white;
+    background-color: black;
+    z-index: 1;
+  
+    border: none;
+    padding: 10px 10px;
+    margin: 15px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-left: 2vw;
+    margin-top: 1vw;
+  }
+  
+  .back:hover{
+    background-color: darkred;
+    transform: scale(1.05);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.5);
+  }
+
+  .tabel{
+    width: 50vw;
+  }
+
+  .tabel:hover{
+    transform: scale(1.02);
+    }
+  
+  .mid{
+  margin-top: 5%;
+  height: 25%;
+  display: flex;
+  justify-content: space-around;
+  border-radius: 30px;
+  align-items: center;
+  }
+  
+  .mid2{
+  height: 20vw;
+  display: flex;
+  justify-content: center;
+  margin-top: 5vw;
+  }
+  
+  .teks1{
+    font-size: 2vw;
+    color: whitesmoke;
+    animation: moveText 2s infinite alternate ease-in-out;
+    font-family:'Franklin Gothic Medium';
+  }
+  
+
+  
+  
+  

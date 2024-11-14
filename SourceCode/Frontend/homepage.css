@@ -1,0 +1,247 @@
+
+html, body {
+  margin: 0;
+  padding: 0;
+  
+
+}
+
+body{
+height: 100vw;
+background-image: url(Image/Background/red.png);
+background-repeat: no-repeat; 
+background-size: cover;
+margin: 0;
+}
+
+.objek{
+height: 100vw;
+
+
+}
+
+@keyframes moveText {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(15px);
+  }
+}
+
+.top{
+display: flex;
+height: 5%;
+flex-direction: row;
+
+
+}
+
+.gambar{
+height: 100%;
+z-index: -1;
+}
+
+.logo{
+width: 4vw;
+height: 5vw;
+z-index: 1;
+margin-top: 1%;
+margin-left: 2%;
+}
+
+.galia{
+font-size: 1.5vw;
+margin-left: 1%;
+margin-top: 2%;
+}
+
+.homepage{
+align-self: first baseline;
+font-size: 1.4vw;
+margin-left: 59%;
+margin-top: 2%;
+color: black;
+transition: transform 0.1s ease;
+}
+.homepage:hover{
+transform: scale(1.1);
+}
+
+#menu1, #menu2 {
+align-self: first baseline;
+margin-top: 2%;
+margin-left: 3%;
+font-size: 1.3vw;
+cursor: pointer;
+background-color: transparent;
+border: none;
+text-decoration: underline;
+transition: transform 0.1s ease;
+}
+#menu1, #menu2:hover{
+transform: scale(1.1);
+}
+
+.menu {
+display: none; /* Menu disembunyikan secara default */
+background-color: black;
+color: white;
+padding: 1%;
+position: absolute; 
+top: 10%; 
+left: 80%; 
+transform: translateX(-50%);
+z-index: 10; 
+width: 12vw; 
+font-size: 1.1vw;
+
+}
+
+.menu ul {
+list-style-type: none;
+padding: 0;
+}
+
+.menu ul li {
+grid-row: 4;
+padding: 0.5vw 0;
+}
+
+.menu ul li a {
+color: white;
+text-decoration: none;
+}
+
+.menu.show {
+display: block;
+}
+
+.about {
+align-self: first baseline;
+font-size: 1.4vw;
+margin-top: 2%;
+margin-left: 3%;
+text-decoration: underline;
+transition: transform 0.1s ease;
+cursor: pointer;
+color: black;
+
+}
+.about:hover{
+transform: scale(1.1);
+}
+
+.signin {
+align-self: first baseline;
+font-size: 1.4vw;
+text-decoration: none;
+color: white;
+background-color: black;
+z-index: 1;
+padding: 5px 10px;
+border: none;
+margin-top: 2%;
+margin-left: 2%;
+cursor: pointer;
+border-radius: 5px;
+}
+
+.signin:hover{
+background-color: red;
+transform: scale(1.1);
+box-shadow: 0 6px 10px rgba(0, 0, 0, 0.5);
+}
+
+.mid{
+margin-top: 5%;
+height: 23%;
+display: flex;
+border-radius: 30px;
+margin-left: 6%;
+margin-right: 6%;
+align-items: center;
+background-image: url(Image/Background/white.png);
+}
+
+.tangan{
+height: 75%;
+transition: transform 0.1s ease;
+z-index: 10;
+
+}
+.tangan:hover{
+transform: scale(1.1);
+}
+
+.atomas{
+height: 75%;
+transition: transform 0.1s ease;
+z-index: 10;
+}
+.atomas:hover{
+transform: scale(1.1);
+}
+
+.tabung{
+height: 75%;
+transition: transform 0.1s ease;
+z-index: 10;
+}
+.tabung:hover{
+transform: scale(1.1);
+}
+
+.mid2{
+margin-top: 8%;
+height: 20vw;
+display: flex;
+flex-direction: column;
+justify-content: center;
+}
+
+.teks1{
+  margin-left: 39%;
+  font-size: 3vw;
+  color: whitesmoke;
+  font-family:'Franklin Gothic Medium';
+}
+
+.pengertian{
+font-size: 2.5vw;
+text-align: center;
+margin-top: 5%;
+margin-left: 5%;
+margin-right: 6%;
+color: whitesmoke;
+}
+
+
+.bot{
+display: flex;
+height: 20%;
+justify-content: center;
+
+}
+
+.ig{
+margin-top: 30%;
+
+}
+
+.teks2{
+margin-top: 30%;
+font-size: 1.4vw;
+color: white;
+}
+
+.pict{
+  width: 1.4vw;
+}
+
+.hidden{
+  display: none;
+}
+
+
+

@@ -1,0 +1,153 @@
+/* style.css */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f7f7f7;
+    color: #333;
+    text-align: center;
+  }
+
+  
+  .head {
+    background-image: url(../Image/Background/red.png);
+    color: white;
+    display: flex;
+  }
+
+  .right1{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .lengkap, .ins{
+    margin-left: 25vw;
+  }
+
+  .lengkap{
+    font-size: 2.5vw;
+  }
+
+  .ins{
+    font-size: 1vw;
+  }
+
+
+  .back {
+    font-size: 1.5vw;
+    text-decoration: none;
+    color: white;
+    background-color: black;
+    z-index: 1;
+  
+    border: none;
+    padding: 10px 10px;
+    margin: 15px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-left: 2vw;
+    margin-top: 1vw;
+  }
+  
+  .back:hover{
+    background-color: darkred;
+    transform: scale(1.05);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.5);
+  }
+
+  .mid{
+    display: flex;
+    justify-content: center;
+    gap: 1vw;
+    margin: 1vw;
+    flex-direction: column;
+  }
+  
+  #questions {
+    flex: 1;
+  }
+  
+  .question {
+    margin-bottom: 20px;
+    font-size: 1.4vw;
+  }
+  
+  .drop-zone {
+    display: inline-block;
+    width: 4vw;
+    height: 3vw;
+    background-color: #e0e0e0;
+    border: 2px dashed #ccc;
+    text-align: center;
+    line-height: 30px;
+  }
+  
+  .drop-zone.over {
+    background-color: #c8e6c9;
+    border: 2px solid #4caf50;
+  }
+  
+  .options {
+    display: flex; /* Menggunakan Flexbox untuk .options */
+    justify-content: space-around; /* Mengatur jarak antar kolom kiri dan kanan */
+    gap: 1vw; /* Jarak antara kolom kiri dan kanan */
+    margin-top: 1vw;
+    flex-direction: column;
+    align-items: center;
+    font-size: 1.3vw;
+  }
+  
+  .left2, .right2 {
+    display: flex;
+    flex-direction: row; /* Mengatur elemen di dalam kolom secara vertikal */
+    gap: 1vw; /* Jarak antar jawaban */
+  }
+  
+  .answer {
+    padding: 0.8vw;
+    background-color: #ffcc80;
+    border: 1px solid #ff9800;
+    border-radius: 5px;
+    cursor: grab;
+    text-align: center;
+    user-select: none;
+
+  }
+  
+  .draggable:active {
+    cursor: grabbing;
+  }
+  
+  #score-container {
+    justify-content: center;
+    display: flex;
+    flex-direction: row;
+    margin-top: 20px;
+    font-size: 1.5vw;
+    font-weight: bold;
+  }
+
+  #selesai{
+    margin-left: 1vw;
+    font-size: 1.5vw;
+    text-decoration: none;
+    color: white;
+    background-color: black;
+    z-index: 1;
+  
+    border: none;
+    padding: 10px 10px;
+    margin: 15px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-left: 2vw;
+    margin-top: 1vw;
+    }
+    
+    #selesai:hover{
+      background-color: darkred;
+      transform: scale(1.05);
+      box-shadow: 0 6px 10px rgba(0, 0, 0, 0.5);
+    }
+  
+  
