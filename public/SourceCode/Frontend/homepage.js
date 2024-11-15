@@ -11,7 +11,7 @@ document.getElementById("menu1").addEventListener("click", function () {
   const button = this; // Ambil tombol yang diklik
 
   positionMenu(button, menu); 
-  menu.classList.toggle("show"); // Toggle class untuk menampilkan/menyembunyikan dropdown
+  menu.classList.toggle("show"); // menampilkan/menyembunyikan dropdown
 });
 
 // untuk Menu 2
@@ -20,7 +20,7 @@ document.getElementById("menu2").addEventListener("click", function () {
   const button = this; // Ambil tombol yang diklik
 
   positionMenu(button, menu); 
-  menu.classList.toggle("show"); // Toggle class untuk menampilkan/menyembunyikan dropdown
+  menu.classList.toggle("show"); // menampilkan/menyembunyikan dropdown
 });
 
 // Hilangkan menu saat layar diresize
