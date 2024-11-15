@@ -1,11 +1,42 @@
-document.getElementById("menu1").addEventListener("click", function() {
-  var menu = document.getElementById("menu");
-  menu.classList.toggle("show"); // Toggle class untuk menampilkan atau menyembunyikan dropdown
+// menghitung posisi menu relatif terhadap tombol
+function positionMenu(button, menu) {
+  const buttonRect = button.getBoundingClientRect(); // Dapatkan posisi tombol
+  menu.style.top = buttonRect.bottom + window.scrollY + "px"; 
+  menu.style.left = buttonRect.left + window.scrollX + "px"; 
+}
+
+// untuk Menu 1
+document.getElementById("menu1").addEventListener("click", function () {
+  const menu = document.getElementById("menu");
+  const button = this; // Ambil tombol yang diklik
+
+  positionMenu(button, menu); 
+  menu.classList.toggle("show"); // Toggle class untuk menampilkan/menyembunyikan dropdown
 });
 
-document.getElementById("menu2").addEventListener("click", function() {
-  var menu = document.getElementById("menu");
-  menu.classList.toggle("show"); // Toggle class untuk menampilkan atau menyembunyikan dropdown
+// untuk Menu 2
+document.getElementById("menu2").addEventListener("click", function () {
+  const menu = document.getElementById("menu");
+  const button = this; // Ambil tombol yang diklik
+
+  positionMenu(button, menu); 
+  menu.classList.toggle("show"); // Toggle class untuk menampilkan/menyembunyikan dropdown
+});
+
+// Hilangkan menu saat layar diresize
+window.addEventListener("resize", function () {
+  const menu = document.getElementById("menu");
+  if (menu.classList.contains("show")) {
+      menu.classList.remove("show"); // Sembunyikan menu
+  }
+});
+
+// Hilangkan menu saat halaman di-scroll
+window.addEventListener("scroll", function () {
+  const menu = document.getElementById("menu");
+  if (menu.classList.contains("show")) {
+      menu.classList.remove("show"); // Sembunyikan menu
+  }
 });
 
 // Mengecek status login
