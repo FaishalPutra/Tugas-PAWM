@@ -1,6 +1,6 @@
 // menghitung posisi menu relatif terhadap tombol
 function positionMenu(button, menu) {
-  const buttonRect = button.getBoundingClientRect(); // Dapatkan posisi tombol
+  const buttonRect = button.getBoundingClientRect(); // posisi tombol
   menu.style.top = buttonRect.bottom + window.scrollY + "px"; 
   menu.style.left = buttonRect.left + window.scrollX + "px"; 
 }
