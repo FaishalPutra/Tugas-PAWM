@@ -5,6 +5,7 @@ import { createUserWithEmailAndPassword, signInWithEmailAndPassword } from "http
 import { getFirestore, doc, setDoc } from "https://www.gstatic.com/firebasejs/11.0.1/firebase-firestore.js";
 import { firebaseConfig } from "./firebaseconfig.js";
 
+// Initialize Firebase
 const app = initializeApp(firebaseConfig);
 const auth = getAuth(app);
 const db = getFirestore(app);
@@ -42,13 +43,11 @@ const signupButton = document.getElementById("signup_but");
 const kotakSignup = document.getElementById("kotak_signup");
 const kotakSignin = document.getElementById("kotak_signin");
 
-// Event untuk Sign Up
+// button untuk Sign Up
 signupButton.addEventListener("click", async () => {
   const email = document.getElementById("signup_email").value;
   const password = document.getElementById("signup_password").value;
   const username = document.getElementById("signup_username").value;
-
-  console.log("Input Username:", username); // Debugging
 
   if (!username) {
     alert("Username tidak boleh kosong!");
@@ -66,7 +65,7 @@ signupButton.addEventListener("click", async () => {
 });
 
 
-// Event untuk Sign In
+// button untuk Sign In
 signinButton.addEventListener("click", async () => {
   const email = document.getElementById("signin_email").value;
   const password = document.getElementById("signin_password").value;

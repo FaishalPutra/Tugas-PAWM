@@ -4,7 +4,6 @@ import { getAuth, onAuthStateChanged, signOut } from "https://www.gstatic.com/fi
 import { getFirestore, doc, getDoc } from "https://www.gstatic.com/firebasejs/11.0.1/firebase-firestore.js";
 import { firebaseConfig } from "./firebaseconfig.js";
 
-
 // Initialize Firebase
 const app = initializeApp(firebaseConfig);
 const auth = getAuth(app);
@@ -17,7 +16,6 @@ let isLoggingOut = false;
 const usernameBox = document.getElementById("username_box");
 const emailBox = document.getElementById("email_box");
 const scoreBox = document.getElementById("score_box");
-const profilePhoto = document.getElementById("profile_photo");
 const logoutButton = document.getElementById("logout_button");
 
 
@@ -55,7 +53,7 @@ onAuthStateChanged(auth, async (user) => {
   }
 });
 
-// Logout Button Event Listener
+// button untuk logout
 logoutButton.addEventListener("click", async () => {
   const confirmation = window.confirm("Apakah Anda yakin ingin logout?");
   if (confirmation) {

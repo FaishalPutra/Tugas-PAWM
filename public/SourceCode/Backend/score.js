@@ -4,7 +4,7 @@ import { getAuth } from "https://www.gstatic.com/firebasejs/11.0.1/firebase-auth
 import { doc, setDoc } from "https://www.gstatic.com/firebasejs/11.0.1/firebase-firestore.js";
 import { firebaseConfig } from "./firebaseconfig.js";
 
-// Inisialisasi Firebase
+// Initialize Firebaseconst 
 const app = initializeApp(firebaseConfig);
 const db = getFirestore(app);
 const auth = getAuth(app);
@@ -25,25 +25,21 @@ async function saveScoreToFirebase(score) {
             { merge: true }  // Pastikan tidak overwrite data lama
         )
         .then(() => {
-            console.log("Data berhasil disimpan ke Firestore.");
-            alert(`Skor berhasil disimpan: ${score}`);
+            alert(`Skor berhasil disimpan: ${score} silahkan cek profil!`);
             window.location.href = "../../../index.html";
 
         })
         .catch((error) => {
-            console.error("Gagal menyimpan skor ke Firestore:", error);
             alert(`Gagal menyimpan skor: ${error.message}`);
         });
     } catch (error) {
-        console.error("Terjadi kesalahan:", error.message || error);
         alert(`Kesalahan: ${error.message || error}`);
     }
 }
 
-// Ambil tombol selesai
 const selesaiButton = document.getElementById("selesai");
 
-// Event Listener untuk tombol selesai
+// button untuk selesai
 selesaiButton.addEventListener("click", () => {
 
     const finalScore = localStorage.getItem("gameScore");

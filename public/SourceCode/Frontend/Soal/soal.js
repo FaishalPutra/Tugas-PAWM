@@ -2,7 +2,6 @@
 let score = 0;
 let currentDraggedElement = null;
 
-// Elemen-elemen terkait
 const draggables = document.querySelectorAll('.answer');
 const dropZones = document.querySelectorAll('.drop-zone');
 const scoreDisplay = document.getElementById('score');
