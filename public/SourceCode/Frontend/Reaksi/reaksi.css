@@ -99,10 +99,12 @@ html, body {
   }
   
   .teks1{
-    font-size: 1.5vw;
+    
+    font-size: 1.3vw;
     color: whitesmoke;
     font-family:'Franklin Gothic Medium';
     margin-left: 2vw;
+    text-align: justify;
   }
   
 
