@@ -6,7 +6,7 @@ const outputMessage = document.getElementById('output-message');
 let current = 50;
 let pressure = 5;
 
-// Fungsi untuk menghitung cahaya yang dihasilkan
+//menghitung cahaya yang dihasilkan
 function calculateLumen(current, pressure) {
     return Math.floor((current * pressure) * 50);  // Tingkatkan faktor lumen untuk efek lebih jelas
 }
@@ -19,7 +19,7 @@ function updateLamp() {
     ctx.clearRect(0, 0, canvas.width, canvas.height);
 
     // Gambar visualisasi cahaya
-    const brightness = Math.min(lumen / 5000, 1); // Pastikan brightness tidak lebih dari 1
+    const brightness = Math.min(lumen / 5000, 1); // brightness tidak lebih dari 1
     ctx.fillStyle = `rgba(255, 255, 100, ${brightness})`;
     ctx.fillRect(0, 0, canvas.width, canvas.height);
 

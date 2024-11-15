@@ -177,7 +177,7 @@ button:hover {
     background-color: #0056b3;
 }
 
-.welding-area {
+.welding_area {
     margin-top: 30px;
     padding: 20px;
     border: 1px solid #ccc;
@@ -189,7 +189,7 @@ canvas {
     border: 1px solid #000;
 }
 
-#result-message {
+#result_message {
     margin-top: 20px;
     font-weight: bold;
     color: #333;

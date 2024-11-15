@@ -4,7 +4,7 @@ const warningMessage = document.getElementById('warning-message');
 let radonLevel = 0;
 
 // Fungsi untuk mengukur tingkat radon di ruangan yang dipilih
-function measureRadon(room) {
+function ukur_radon(room) {
     if (room === 'basement') {
         radonLevel = Math.floor(Math.random() * 400) + 100; // Tingkat radon tinggi di ruang bawah tanah
     } else if (room === 'living-room') {
@@ -23,7 +23,7 @@ function measureRadon(room) {
 }
 
 // Fungsi untuk mengurangi tingkat radon dengan ventilasi
-function addVentilation() {
+function add_ventilation() {
     if (radonLevel > 0) {
         radonLevel -= 50;
         resultMessage.textContent = `Tingkat Radon Setelah Ventilasi: ${radonLevel} Bq/m³`;
@@ -35,7 +35,7 @@ function addVentilation() {
 }
 
 // Fungsi untuk mengurangi tingkat radon dengan sealing cracks
-function sealCracks() {
+function seal_cracks() {
     if (radonLevel > 0) {
         radonLevel -= 30;
         resultMessage.textContent = `Tingkat Radon Setelah Sealing Cracks: ${radonLevel} Bq/m³`;
@@ -47,10 +47,10 @@ function sealCracks() {
 }
 
 // Event listeners untuk ruangan
-document.getElementById('basement').addEventListener('click', () => measureRadon('basement'));
-document.getElementById('living-room').addEventListener('click', () => measureRadon('living-room'));
-document.getElementById('bedroom').addEventListener('click', () => measureRadon('bedroom'));
+document.getElementById('basement').addEventListener('click', () => ukur_radon('basement'));
+document.getElementById('living-room').addEventListener('click', () => ukur_radon('living-room'));
+document.getElementById('bedroom').addEventListener('click', () => ukur_radon('bedroom'));
 
 // Event listeners untuk tindakan pencegahan
-document.getElementById('ventilation').addEventListener('click', addVentilation);
-document.getElementById('seal-cracks').addEventListener('click', sealCracks);
+document.getElementById('ventilation').addEventListener('click', add_ventilation);
+document.getElementById('seal-cracks').addEventListener('click', seal_cracks);

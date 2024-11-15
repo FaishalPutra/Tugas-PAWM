@@ -182,7 +182,7 @@ canvas {
     border: 1px solid #000;
 }
 
-#output-message {
+#output_message {
     margin-top: 20px;
     font-weight: bold;
     color: #333;

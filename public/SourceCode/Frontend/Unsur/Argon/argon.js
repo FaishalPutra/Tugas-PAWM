@@ -1,12 +1,12 @@
-const canvas = document.getElementById('welding-simulation');
+const canvas = document.getElementById('welding_simulation');
 const ctx = canvas.getContext('2d');
-const resultMessage = document.getElementById('result-message');
+const resultMessage = document.getElementById('result_message');
 
 // Fungsi untuk menggambar hasil pengelasan
-function simulateWelding(gasType) {
+function simulateWelding(gastype) {
     ctx.clearRect(0, 0, canvas.width, canvas.height);
 
-    if (gasType === 'argon') {
+    if (gastype === 'argon') {
         // Pengelasan dengan Argon
         ctx.fillStyle = 'silver';
         ctx.fillRect(100, 150, 400, 100);  // Logam dasar
@@ -17,7 +17,7 @@ function simulateWelding(gasType) {
         ctx.lineTo(500, 200);  // Lasan argon
         ctx.stroke();
         resultMessage.textContent = 'Hasil Pengelasan dengan Argon: Lasan bersih tanpa oksidasi!';
-    } else if (gasType === 'air') {
+    } else if (gastype === 'air') {
         // Pengelasan tanpa gas pelindung (udara)
         ctx.fillStyle = 'silver';
         ctx.fillRect(100, 150, 400, 100);  // Logam dasar
@@ -34,10 +34,10 @@ function simulateWelding(gasType) {
 }
 
 // Event listener untuk tombol
-document.getElementById('argon-weld').addEventListener('click', function() {
+document.getElementById('argon_weld').addEventListener('click', function() {
     simulateWelding('argon');
 });
 
-document.getElementById('air-weld').addEventListener('click', function() {
+document.getElementById('air_weld').addEventListener('click', function() {
     simulateWelding('air');
 });

@@ -2,9 +2,7 @@ function adjustVoltage(value) {
     const neonLamp = document.getElementById('neon-lamp');
     const voltageOutput = document.getElementById('voltage-output');
 
-
     voltageOutput.textContent = value;
-
 
     if (value == 0) {
         neonLamp.style.backgroundColor = 'black';  // Lampu mati
