@@ -18,6 +18,9 @@
     }
   }
 
+  /* h1{
+    font-size: 2.5vw;
+} */
   .objek{
     width: 100vw;
     height: 100vw;
@@ -27,6 +30,7 @@
 
 
  .left{
+    height: 100vh;
     background-image: url(../../Image/Background/red.png);
     background-repeat: no-repeat; 
     background-size: cover;
@@ -39,7 +43,7 @@
  }
 
  .atom{
-    width: 100px;
+    width: 6.5vw;
     margin-right: 1vw;
     z-index: 1;
     justify-content: end;
@@ -47,15 +51,15 @@
 }
 
 .back {
-    font-size: 20px;
+    font-size: 1.5vw;
     text-decoration: none;
     color: white;
     background-color: black;
     z-index: 1;
   
     border: none;
-    padding: 10px 10px;
-    margin: 25px;
+    padding: 1vw 1vw;
+    margin: 1.6vw;
     cursor: pointer;
     border-radius: 5px;
   }
@@ -67,9 +71,7 @@
   }
 
 .mark{
-    font-size: 15px;
-    grid-column: 2;
-    grid-row: 14;
+    font-size: 0.9vw;
     z-index: 1;
     font-style: italic;
     color: red;
@@ -83,7 +85,7 @@
 }
 
 .pengertian{
-    font-size: 18px;
+    font-size: 1.2vw;
     margin-top: 2vw;
     margin-left: 7vw;
     margin-right: 7vw;
@@ -92,13 +94,13 @@
 
 
 .light{
-    width: 200px;
+    width: 14vw;
     margin-top: 3vw;
 }
 
 
 .wiki{
-    font-size: 15px;
+    font-size: 1vw;
     margin-top: 1vw;
     z-index: 1;
     text-decoration: none;
@@ -106,7 +108,7 @@
 
 .contoh{
     text-align: justify;
-    font-size: 18px;
+    font-size: 1.2vw;
     margin-top: 2vw;
 }
 
@@ -117,7 +119,7 @@
 
 .pilih{
     margin-top: 2vw;
-    font-size: 25px;
+    font-size: 1.5vw;
 }
 
 .botr{
@@ -127,8 +129,8 @@
 }
 
 .pict{
-    width: 100px;
-    height: 100px;
+    width: 7vw;
+    
 }
 
 .topl{
@@ -146,7 +148,7 @@
 
 .botl{
     display: flex;
-    margin-top: 3vw;
+    margin-top: 4vw;
     margin-left: 2vw;
 }
 
